@@ -1,6 +1,8 @@
 name: Publish Nomad Web
 
 on:
+  repository_dispatch:
+    types: [nomad_web_release]
   push:
     branches: [site]
   workflow_dispatch:
